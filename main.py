@@ -16,7 +16,7 @@ print(x)
 print(y)
 
 epochs = int(input("Number of epoch u want: "))
-alpha = float(input("Prefered alpha value"))
+alpha = float(input("Prefered alpha value: "))
 
 for i in range(datapoints):
     predY.append(0.0)
@@ -85,7 +85,7 @@ for i in range(epochs):
         bn = findBetaNote(y, alpha, bn)
         bo = findBetaOne(y, x, alpha, bo)
         predict(bn, bo, x)
-        print("Executed 2")
+
 
 
     MSE(y, predY)
